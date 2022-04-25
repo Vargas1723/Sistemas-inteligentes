@@ -1,0 +1,42 @@
+Prueba de algoritmos de búsqueda no informada
+Selecciona al menos 10 parejas de localizaciones que no tengan una distancia mayor a 1000 metros
+
+Pareja 1 
+SRC: 3246224685 / 40,4162473, -3,7134449 / Plaza de la Armería (322589263)
+DST: 21734250 / 40,4161249, -3,7080199 / Calle de San Felipe Neri (4518850)
+
+Pareja 2
+SRC: 21734250 / 40,4161249, -3,7080199 / Calle de San Felipe Neri (4518850)
+DST: 25906743 / 40,4171423, -3,7020253 / Calle de Alcalá (4328837)
+
+Pareja 3
+SRC: 25906743 / 40,4171423, -3,7020253 / Calle de Alcalá (4328837)
+DST: 26341673 / 40,4200052, -3,7011016 / Gran Vía (43410312)
+
+Pareja 4
+SRC: 26341673 / 40,4200052, -3,7011016 / Gran Vía (43410312)
+DST: 25906273 / 40,4230007, -3,6975802 / Calle de Gravina (7972372)
+
+Pareja 5
+SRC: 25906273 / 40,4230007, -3,6975802 / Calle de Gravina (7972372)
+DST: 26486643 / 40,4181653, -3,6927945 / Calle de Montalbán (27396509)
+
+Pareja 6
+SRC: 26486643 / 40,4181653, -3,6927945 / Calle de Montalbán (27396509)
+DST: 26487779 /  40,4126283, -3,6948867 / Calle San Pedro (7972664)
+
+Pareja 7
+SRC: 26487779 /  40,4126283, -3,6948867 / Calle San Pedro (7972664)
+DST: 21941563 / 40,4082801, -3,7008032 / Calle de Argumosa (7972744)
+
+Pareja 8
+SRC: 21941563 / 40,4082801, -3,7008032 / Calle de Argumosa (7972744)
+DST: 21947369 / 40,4120302, -3,7053905 / Calle del Duque de Alba (4328609)
+
+Pareja 9
+SRC: 21947369 / 40,4120302, -3,7053905 / Calle del Duque de Alba (4328609)
+DST: 25906743 / 40,4171423, -3,7020253 / Calle de Alcalá (4328837)
+
+Pareja 10
+SRC: 21947369 / 40,4120302, -3,7053905 / Calle del Duque de Alba (4328609)
+DST: 21734250 / 40,4161249, -3,7080199 / Calle de San Felipe Neri (4518850)
