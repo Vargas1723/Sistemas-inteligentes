@@ -1,0 +1,329 @@
+Pareja de putnos # 1
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.031000137329101562 seconds ---
+Calculate distance:  623.002
+Calculate time:  56.995999999999995
+
+ - Calculating DFS Route -
+Econtre nodo:  21734250
+Tiempo empleado
+--- 0.014043569564819336 seconds ---
+Calculate distance:  10418.044000000002
+Calculate time:  1163.5619999999997
+
+ - Calculating DLS Route -
+Econtre nodo:  21734250
+Tiempo empleado
+--- 0.05564618110656738 seconds ---
+Calculate distance:  1863.109
+Calculate time:  180.44700000000003
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.0451505184173584 seconds ---
+Calculate distance:  3380.446999999998
+Calculate time:  315.28999999999985
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.10575652122497559 seconds ---
+Calculate distance:  1215.7320000000002
+Calculate time:  108.69800000000001
+
+Pareja de putnos # 2
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.015963077545166016 seconds ---
+Calculate distance:  682.84
+Calculate time:  64.157
+
+ - Calculating DFS Route -
+Econtre nodo:  25906743
+Tiempo empleado
+--- 0.12993383407592773 seconds ---
+Calculate distance:  17538.054000000004
+Calculate time:  1855.7580000000003
+
+ - Calculating DLS Route -
+Econtre nodo:  25906743
+Tiempo empleado
+--- 0.02357792854309082 seconds ---
+Calculate distance:  1155.846
+Calculate time:  108.218
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.002007007598876953 seconds ---
+Calculate distance:  1527.716
+Calculate time:  178.17400000000004
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.03953409194946289 seconds ---
+Calculate distance:  3077.563
+Calculate time:  313.65900000000005
+
+Pareja de putnos # 3
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.0080108642578125 seconds ---
+Calculate distance:  602.5409999999999
+Calculate time:  73.752
+
+ - Calculating DFS Route -
+Econtre nodo:  26341673
+Tiempo empleado
+--- 0.15997767448425293 seconds ---
+Calculate distance:  20547.49600000002
+Calculate time:  2193.9480000000035
+
+ - Calculating DLS Route -
+Econtre nodo:  26341673
+Tiempo empleado
+--- 0.008008003234863281 seconds ---
+Calculate distance:  1521.2949999999996
+Calculate time:  118.86900000000003
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.05234360694885254 seconds ---
+Calculate distance:  2932.991
+Calculate time:  275.6669999999999
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.05443406105041504 seconds ---
+Calculate distance:  1075.625
+Calculate time:  116.716
+
+Pareja de putnos # 4
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.004006147384643555 seconds ---
+Calculate distance:  548.6020000000001
+Calculate time:  73.184
+
+ - Calculating DFS Route -
+Econtre nodo:  25906273
+Tiempo empleado
+--- 0.0 seconds ---
+Calculate distance:  685.294
+Calculate time:  94.469
+
+ - Calculating DLS Route -
+Econtre nodo:  25906273
+Tiempo empleado
+--- 0.0 seconds ---
+Calculate distance:  685.294
+Calculate time:  94.469
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.003995656967163086 seconds ---
+Calculate distance:  1396.789
+Calculate time:  148.498
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.0015530586242675781 seconds ---
+Calculate distance:  864.2470000000001
+Calculate time:  101.528
+
+Pareja de putnos # 5
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.03223609924316406 seconds ---
+Calculate distance:  1043.7579999999998
+Calculate time:  100.38000000000001
+
+ - Calculating DFS Route -
+Econtre nodo:  26486643
+Tiempo empleado
+--- 0.20798015594482422 seconds ---
+Calculate distance:  21413.765999999992
+Calculate time:  2289.0280000000016
+
+ - Calculating DLS Route -
+Econtre nodo:  26486643
+Tiempo empleado
+--- 0.08707857131958008 seconds ---
+Calculate distance:  2816.9210000000003
+Calculate time:  248.6349999999999
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.08595609664916992 seconds ---
+Calculate distance:  8679.305999999997
+Calculate time:  852.6100000000001
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.0325167179107666 seconds ---
+Calculate distance:  3212.3020000000015
+Calculate time:  311.1030000000001
+
+Pareja de putnos # 6
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.008002996444702148 seconds ---
+Calculate distance:  916.6589999999999
+Calculate time:  92.21
+
+ - Calculating DFS Route -
+Econtre nodo:  26487779
+Tiempo empleado
+--- 0.024628400802612305 seconds ---
+Calculate distance:  21644.16600000001
+Calculate time:  2325.2139999999995
+
+ - Calculating DLS Route -
+Econtre nodo:  26487779
+Tiempo empleado
+--- 0.06310701370239258 seconds ---
+Calculate distance:  1681.8319999999999
+Calculate time:  178.07999999999998
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.006422281265258789 seconds ---
+Calculate distance:  1603.153
+Calculate time:  164.41199999999998
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.009925365447998047 seconds ---
+Calculate distance:  1426.4679999999998
+Calculate time:  107.46600000000007
+
+Pareja de putnos # 7
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.014903783798217773 seconds ---
+Calculate distance:  948.144
+Calculate time:  101.37500000000001
+
+ - Calculating DFS Route -
+Econtre nodo:  21941563
+Tiempo empleado
+--- 0.14687418937683105 seconds ---
+Calculate distance:  14789.025999999998
+Calculate time:  1536.1700000000008
+
+ - Calculating DLS Route -
+Econtre nodo:  21941563
+Tiempo empleado
+--- 0.0025343894958496094 seconds ---
+Calculate distance:  1386.5159999999998
+Calculate time:  126.148
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.14122772216796875 seconds ---
+Calculate distance:  2016.3959999999997
+Calculate time:  273.61099999999993
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.17841362953186035 seconds ---
+Calculate distance:  1868.429
+Calculate time:  180.18
+
+Pareja de putnos # 8
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.008005142211914062 seconds ---
+Calculate distance:  677.1089999999999
+Calculate time:  109.578
+
+ - Calculating DFS Route -
+Econtre nodo:  21947369
+Tiempo empleado
+--- 0.03276228904724121 seconds ---
+Calculate distance:  22544.041999999998
+Calculate time:  2441.33
+
+ - Calculating DLS Route -
+Econtre nodo:  21947369
+Tiempo empleado
+--- 0.008008480072021484 seconds ---
+Calculate distance:  1938.3959999999997
+Calculate time:  259.124
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.003154754638671875 seconds ---
+Calculate distance:  1778.4460000000004
+Calculate time:  220.453
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.004005908966064453 seconds ---
+Calculate distance:  1806.746
+Calculate time:  223.139
+
+Pareja de putnos # 9
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.02197551727294922 seconds ---
+Calculate distance:  837.368
+Calculate time:  76.06099999999998
+
+ - Calculating DFS Route -
+Econtre nodo:  25906743
+Tiempo empleado
+--- 0.11158466339111328 seconds ---
+Calculate distance:  18459.459000000013
+Calculate time:  1947.7459999999999
+
+ - Calculating DLS Route -
+Econtre nodo:  25906743
+Tiempo empleado
+--- 0.03385519981384277 seconds ---
+Calculate distance:  2254.0470000000005
+Calculate time:  237.405
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.016927719116210938 seconds ---
+Calculate distance:  3150.837000000001
+Calculate time:  345.34799999999996
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.011728763580322266 seconds ---
+Calculate distance:  2207.619
+Calculate time:  206.25099999999992
+
+Pareja de putnos # 10
+ - Calculating BFS Route -
+Tiempo empleado
+--- 0.022025108337402344 seconds ---
+Calculate distance:  682.4190000000001
+Calculate time:  59.10999999999999
+
+ - Calculating DFS Route -
+Econtre nodo:  21734250
+Tiempo empleado
+--- 0.001889944076538086 seconds ---
+Calculate distance:  921.405
+Calculate time:  91.988
+
+ - Calculating DLS Route -
+Econtre nodo:  21734250
+Tiempo empleado
+--- 0.001003265380859375 seconds ---
+Calculate distance:  921.405
+Calculate time:  91.988
+
+ - Calculating UCS Distance Route -
+Tiempo empleado
+--- 0.056545257568359375 seconds ---
+Calculate distance:  5378.692
+Calculate time:  568.8310000000002
+
+ - Calculating UCS Time Route -
+Tiempo empleado
+--- 0.014048576354980469 seconds ---
+Calculate distance:  892.9209999999999
+Calculate time:  76.04299999999998

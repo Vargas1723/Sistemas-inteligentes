@@ -143,6 +143,7 @@ def ucs(graph, start, goal, data='length'):
 
 # Driver Code
 def testProblem1(Graph, start, end):
+
     # BFS
     print(" - Calculating BFS Route - ")
     start_time = time.time()
@@ -184,9 +185,11 @@ def testProblem1(Graph, start, end):
     printResults(Graph, path)
     print()
 
+
 def runProblem1(Graph, locations):
-    for location in locations:
-        testProblem1(Graph, location[0], location[1])
+    for i in range(len(locations)):
+        print('Pareja de putnos #', i+1)
+        testProblem1(Graph, locations[i][0], locations[i][1])
 
 # Data
 def main():
