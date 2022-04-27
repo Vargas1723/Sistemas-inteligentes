@@ -1,3 +1,33 @@
+---------------------------------------------
+Resultados Promedio de toda la evaluacion
+---------------------------------------------
+Average Results  BFS  : Ratio 1km
+Time execution:  0.013708853721618652
+Time :  81.34459999999999
+Distance:  756.2442000000001
+
+Average Results  DFS  : Ratio 1km
+Time execution:  0.06647756099700927
+Time :  1596.3056000000001
+Distance:  14896.075200000003
+
+Average Results  DLS  : Ratio 1km
+Time execution:  0.02185947895050049
+Time :  164.4904
+Distance:  1622.4661
+
+Average Results  UCS Distance  : Ratio 1km
+Time execution:  0.03172633647918701
+Time :  334.5807
+Distance:  3184.4772999999996
+
+Average Results  UCS Time  : Ratio 1km
+Time execution:  0.025363349914550783
+Time :  217.87609999999995
+Distance:  2177.2949
+---------------------------------------------
+Resultado de cada evaluacion
+---------------------------------------------
 Pareja de putnos # 1
  - Calculating BFS Route -
 Tiempo empleado
