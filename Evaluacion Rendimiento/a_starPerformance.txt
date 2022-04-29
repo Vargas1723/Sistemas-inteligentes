@@ -1,0 +1,82 @@
+----------------------  1 km < Distancias < 3 km------------------------------
+Average Results  A *  : Ratio 1km - 3km
+Time execution:  0.006987969080607097
+Time :  188.45933333333338
+Distance:  1905.836666666667
+------------------------------------------------------------------------------
+Pareja de putnos # 1
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.005004167556762695 seconds ---
+Calculate distance:  2113.831000000001
+Calculate time:  213.56900000000007
+
+Pareja de putnos # 2
+ - Calculating A * Route -
+Tiempo empleado
+--- 0.010972976684570312 seconds ---
+Calculate distance:  1743.977
+Calculate time:  158.8
+
+Pareja de putnos # 3
+ - Calculating A * Route -
+Tiempo empleado
+--- 0.004986763000488281 seconds ---
+Calculate distance:  1859.702
+Calculate time:  193.00900000000004
+
+----------------------  3 km < Distancias < 7 km------------------------------
+Average Results  A *  : Ratio 3km - 7km
+Time execution:  0.033899545669555664
+Time :  524.8063333333333
+Distance:  6331.318666666665
+------------------------------------------------------------------------------
+Pareja de putnos # 1
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.017923831939697266 seconds ---
+Calculate distance:  5143.732999999998
+Calculate time:  387.26699999999994
+
+Pareja de putnos # 2
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.054852962493896484 seconds ---
+Calculate distance:  7224.854999999998
+Calculate time:  576.4079999999999
+
+Pareja de putnos # 3
+ - Calculating A * Route -
+Tiempo empleado
+--- 0.028921842575073242 seconds ---
+Calculate distance:  6625.3679999999995
+Calculate time:  610.7440000000001
+
+--------------------------- Distancias > 10 km--------------------------------
+Average Results  A *  : Ratio 10+ km
+Time execution:  0.057845115661621094
+Time :  1576.9630000000006
+Distance:  13115.017333333331
+------------------------------------------------------------------------------
+Pareja de putnos # 1
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.0797874927520752 seconds ---
+Calculate distance:  15751.593999999997
+Calculate time:  2031.1200000000013
+
+Pareja de putnos # 2
+ - Calculating A * Route -
+Tiempo empleado
+--- 0.04587721824645996 seconds ---
+Calculate distance:  12754.983999999999
+Calculate time:  1567.1660000000006
+
+Pareja de putnos # 3
+ - Calculating A * Route -
+Tiempo empleado
+--- 0.047870635986328125 seconds ---
+Calculate distance:  10838.474
+Calculate time:  1132.6029999999998
+
+

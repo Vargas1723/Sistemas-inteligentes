@@ -1,0 +1,146 @@
+---------------------------------------------
+Resultados Promedio de toda la evaluacion
+---------------------------------------------
+
+Average Results  Best First Search  : Ratio 1km
+Time execution:  0.001997566223144531
+Time :  98.24589999999998
+Distance:  908.4805
+
+Average Results  A *  : Ratio 1km
+Time execution:  0.004288792610168457
+Time :  108.0545
+Distance:  974.6079999999998
+
+---------------------------------------------
+Resultado de cada evaluacion
+---------------------------------------------
+Pareja de putnos # 1
+ - Calculating Best First Search Route - 
+Tiempo empleado
+--- 0.002021312713623047 seconds ---
+Calculate distance:  795.509
+Calculate time:  85.09199999999998
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.002992391586303711 seconds ---
+Calculate distance:  1166.652
+Calculate time:  118.46300000000001
+
+Pareja de putnos # 2
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.0019948482513427734 seconds ---
+Calculate distance:  817.8629999999999
+Calculate time:  82.991
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.002993345260620117 seconds ---
+Calculate distance:  1056.7189999999998
+Calculate time:  106.371
+
+Pareja de putnos # 3
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.0019953250885009766 seconds ---
+Calculate distance:  1030.318
+Calculate time:  107.54999999999998
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.010971546173095703 seconds ---
+Calculate distance:  602.5409999999999
+Calculate time:  75.213
+
+Pareja de putnos # 4
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.0009975433349609375 seconds ---
+Calculate distance:  799.437
+Calculate time:  94.14099999999999
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.0029926300048828125 seconds ---
+Calculate distance:  733.403
+Calculate time:  103.54399999999998
+
+Pareja de putnos # 5
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.002992868423461914 seconds ---
+Calculate distance:  1011.7949999999998
+Calculate time:  96.94099999999997
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.003989219665527344 seconds ---
+Calculate distance:  994.0469999999999
+Calculate time:  92.49999999999997
+
+Pareja de putnos # 6
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.0019936561584472656 seconds ---
+Calculate distance:  959.2270000000001
+Calculate time:  93.47999999999999
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.004986763000488281 seconds ---
+Calculate distance:  948.9100000000001
+Calculate time:  73.06899999999999
+
+Pareja de putnos # 7
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.001996278762817383 seconds ---
+Calculate distance:  1057.425
+Calculate time:  116.206
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.003989696502685547 seconds ---
+Calculate distance:  1331.21
+Calculate time:  160.068
+
+Pareja de putnos # 8
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.0019943714141845703 seconds ---
+Calculate distance:  825.2860000000001
+Calculate time:  135.38400000000001
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.001993417739868164 seconds ---
+Calculate distance:  712.48
+Calculate time:  113.96000000000001
+
+Pareja de putnos # 9
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.0019953250885009766 seconds ---
+Calculate distance:  893.0340000000002
+Calculate time:  82.44400000000002
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.003989458084106445 seconds ---
+Calculate distance:  1352.354
+Calculate time:  147.226
+
+Pareja de putnos # 10
+ - Calculating Best First Search Route -
+Tiempo empleado
+--- 0.0019941329956054688 seconds ---
+Calculate distance:  894.9110000000001
+Calculate time:  88.22999999999999
+
+ - Calculating A * Route - 
+Tiempo empleado
+--- 0.003989458084106445 seconds ---
+Calculate distance:  847.7639999999999
+Calculate time:  90.13099999999997

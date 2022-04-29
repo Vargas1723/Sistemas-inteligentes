@@ -1,0 +1,85 @@
+----------------------  1 km < Distancias < 3 km------------------------------
+Average Results  Breadth First Search  : Ratio 1km
+Average Results  Breadth First Search  : Ratio 1km
+Average Results  Breadth First Search  : Ratio 1km
+Time execution:  0.06316995620727539
+Time :  187.15766666666664
+Distance:  1392.5249999999996
+
+------------------------------------------------------------------------------
+Pareja de putnos # 1
+ - Calculating Breadth First search Route - 
+Tiempo empleado
+--- 0.05686545372009277 seconds ---
+Calculate distance:  1180.691
+Calculate time:  192.35100000000003
+
+Pareja de putnos # 2
+ - Calculating Breadth First search Route -
+Tiempo empleado
+--- 0.09574365615844727 seconds ---
+Calculate distance:  1741.8859999999995
+Calculate time:  256.79499999999996
+
+Pareja de putnos # 3
+ - Calculating Breadth First search Route -
+Tiempo empleado
+--- 0.03690075874328613 seconds ---
+Calculate distance:  1254.998
+Calculate time:  112.32700000000001
+
+
+----------------------  3 km < Distancias < 7 km------------------------------
+Average Results  Breadth First Search  : Ratio 1km
+Time execution:  5.094383001327515
+Time :  540.8770000000001
+Distance:  5402.641333333334
+------------------------------------------------------------------------------
+Pareja de putnos # 1
+ - Calculating Breadth First search Route - 
+Tiempo empleado
+--- 3.976365327835083 seconds ---
+Calculate distance:  4411.216000000001
+Calculate time:  518.4459999999998
+
+Pareja de putnos # 2
+ - Calculating Breadth First search Route - 
+Tiempo empleado
+--- 6.098714351654053 seconds ---
+Calculate distance:  6086.971999999999
+Calculate time:  577.4300000000003
+
+Pareja de putnos # 3
+ - Calculating Breadth First search Route -
+Tiempo empleado
+--- 5.208069324493408 seconds ---
+Calculate distance:  5709.736000000001
+Calculate time:  526.7550000000002
+
+--------------------------- Distancias > 10 km--------------------------------
+Average Results  Breadth First Search  : Ratio 1km
+Time execution:  44.46405871709188
+Time :  1021.8236666666666
+Distance:  10975.365333333335
+------------------------------------------------------------------------------
+
+Pareja de putnos # 1
+ - Calculating Breadth First Search Route - 
+Tiempo empleado
+--- 75.63965392112732 seconds ---
+Calculate distance:  11530.757
+Calculate time:  1073.3439999999998
+
+Pareja de putnos # 2
+ - Calculating Breadth First Search Route - 
+Tiempo empleado
+--- 35.375377893447876 seconds ---
+Calculate distance:  13239.464000000004
+Calculate time:  1214.81
+
+Pareja de putnos # 3
+ - Calculating Breadth First Search Route -
+Tiempo empleado
+--- 22.37714433670044 seconds ---
+Calculate distance:  8155.874999999999
+Calculate time:  777.3170000000002

@@ -1,0 +1,86 @@
+Prueba de algoritmos de búsqueda no informada e informada
+
+
+--------------------------- Distancias < 1 km---------------------------------
+
+Pareja 1 
+SRC: 3246224685 / 40,4162473, -3,7134449 / Plaza de la Armería (322589263)
+DST: 21734250 / 40,4161249, -3,7080199 / Calle de San Felipe Neri (4518850)
+
+Pareja 2
+SRC: 21734250 / 40,4161249, -3,7080199 / Calle de San Felipe Neri (4518850)
+DST: 25906743 / 40,4171423, -3,7020253 / Calle de Alcalá (4328837)
+
+Pareja 3
+SRC: 25906743 / 40,4171423, -3,7020253 / Calle de Alcalá (4328837)
+DST: 26341673 / 40,4200052, -3,7011016 / Gran Vía (43410312)
+
+Pareja 4
+SRC: 26341673 / 40,4200052, -3,7011016 / Gran Vía (43410312)
+DST: 25906273 / 40,4230007, -3,6975802 / Calle de Gravina (7972372)
+
+Pareja 5
+SRC: 25906273 / 40,4230007, -3,6975802 / Calle de Gravina (7972372)
+DST: 26486643 / 40,4181653, -3,6927945 / Calle de Montalbán (27396509)
+
+Pareja 6
+SRC: 26486643 / 40,4181653, -3,6927945 / Calle de Montalbán (27396509)
+DST: 26487779 /  40,4126283, -3,6948867 / Calle San Pedro (7972664)
+
+Pareja 7
+SRC: 26487779 /  40,4126283, -3,6948867 / Calle San Pedro (7972664)
+DST: 21941563 / 40,4082801, -3,7008032 / Calle de Argumosa (7972744)
+
+Pareja 8
+SRC: 21941563 / 40,4082801, -3,7008032 / Calle de Argumosa (7972744)
+DST: 21947369 / 40,4120302, -3,7053905 / Calle del Duque de Alba (4328609)
+
+Pareja 9
+SRC: 21947369 / 40,4120302, -3,7053905 / Calle del Duque de Alba (4328609)
+DST: 25906743 / 40,4171423, -3,7020253 / Calle de Alcalá (4328837)
+
+Pareja 10
+SRC: 21947369 / 40,4120302, -3,7053905 / Calle del Duque de Alba (4328609)
+DST: 21734250 / 40,4161249, -3,7080199 / Calle de San Felipe Neri (4518850)
+
+
+----------------------  1 km < Distancias < 3 km------------------------------
+Pareja 1 
+SRC: 3246224685 / 40,4162473, -3,7134449 / Plaza de la Armería (322589263)
+DST: 25906743 / 40,4171423, -3,7020253 / Calle de Alcalá (4328837)
+
+Pareja 2
+SRC: 26341673 / 40,4200052, -3,7011016 / Gran Vía (43410312)
+DST: 3246224685 / 40,4162473, -3,7134449 / Plaza de la Armería (322589263)
+
+Pareja 3
+SRC: 21947369 / 40,4120302, -3,7053905 / Calle del Duque de Alba (4328609)
+DST: 3246224685 / 40,4162473, -3,7134449 / Plaza de la Armería (322589263)
+
+
+----------------------  3 km < Distancias < 7 km------------------------------
+Pareja 1 
+SRC: 3246224685 / 40,4162473, -3,7134449 / Plaza de la Armería (322589263)
+DST: 21527321 / 40,4215943, -3,6799577 / Calle de O'Donnell (4078616)
+
+Pareja 2
+SRC: 3246224685 / 40,4162473, -3,7134449 / Plaza de la Armería (322589263)
+DST: 151022800 / 40,4098146, -3,6700417 / Calle Doctor Esquerdo (320826401)
+
+Pareja 3
+SRC: 3246224685 / 40,4162473, -3,7134449 / Plaza de la Armería (322589263)
+DST: 267041344 / 40,4374540, -3,6776485 / Calle de María de Molina (23713175)
+
+--------------------------- Distancias > 10 km--------------------------------
+
+Pareja 1
+SRC: 267041344 / 40,4374540, -3,6776485 / Calle de María de Molina (23713175)
+DST: 49951831 / 40,3981529, -3,7630764 / Calle de Seseña (302167157)
+
+Pareja 2
+SRC: 49951831 / 40,3981529, -3,7630764 / Calle de Seseña (302167157)
+DST: 2630630893 / 40,3994570, -3,6606870 / Calle de la Sierra Toledana (27549388)
+
+Pareja 3
+SRC: 2630630893 / 40,3994570, -3,6606870 / Calle de la Sierra Toledana (27549388)
+DST: 27522358 / 40,4386713, -3,7042134 / Calle de Bravo Murillo (43410334)

@@ -1,6 +1,7 @@
 from asyncio.windows_events import NULL
 import osmnx as ox
 import time
+from queue import PriorityQueue
 
 
 
@@ -42,7 +43,9 @@ def backtrace(parents, start, end):
         path.insert(0, parents[current])
         current = parents[current]
     return path
-
+#---------------------------------------------------------
+#-------- Busqueda no informada --------------------------
+#---------------------------------------------------------
 # Algoritmo BFS
 def bfs(graph, node, dst):  # function for BFS
     visited = []  # List for visited nodes.
@@ -64,7 +67,6 @@ def bfs(graph, node, dst):  # function for BFS
                 visited.append(neighbour[1])
                 queue.append(neighbour[1])
     return False
-
 # Algoritmo DFS y DLS
 def dfsSearch(graph, node, dst, depth, limit, visited, parent):
     if not limit or depth <= limit:
@@ -78,7 +80,6 @@ def dfsSearch(graph, node, dst, depth, limit, visited, parent):
                 if neighbour[1] not in visited:
                     parent[neighbour[1]] = node
                     if dfsSearch(graph, neighbour[1], dst, depth, limit, visited, parent): return True, parent
-
 # Funcion de preparacion para algoritmo DFS y DLS
 def dfs(graph, node, dst, limit=0):
     visited = []
@@ -92,8 +93,7 @@ def dfs(graph, node, dst, limit=0):
         # del nivel en caso de no encontrar 
         # una ruta con el limite establecido
         return dfs(graph, node, dst, limit+10)
-
-
+# Algoritmo UCS
 def ucs(graph, start, goal, data='length'):
  
     parent = {}
@@ -128,9 +128,64 @@ def ucs(graph, start, goal, data='length'):
         visited[p[1]] = 1
 
     return answer, parent
+#---------------------------------------------------------
+#----------- Busqueda informada --------------------------
+#---------------------------------------------------------
 
+# Funcion Heuristica para Best First Search y A *
+# Utiliza la distancia de cada nodo con el nodo meta
+def heuristic(x1, y1, x2, y2):
+    return ox.distance.great_circle_vec(x1, y1, x2, y2)
+# Algoritmo Best First Search
+def best_first_search(graph, start, goal):
+    visited = []
+    path = []
+    parent = {}
+    pq = PriorityQueue()
+    pq.put((0, start))
+    while pq.empty() == False:
+        u = pq.get()[1]
+        # Displaying the path having lowest cost
+        #print(u, end=" ")
+        path.append(u)
+        if u == goal:
+            return True, backtrace(parent, start, goal)
+        edges = list(graph.out_edges(u))
+        for s, e in edges:
+            if e not in visited:
+                f = heuristic(graph.nodes[s]['x'], graph.nodes[s]['y'], graph.nodes[goal]['x'], graph.nodes[goal]['y'])
+                parent[e] = s
+                visited.append(e)
+                pq.put((f, e))
+    return False
+# Algoritmo A *
+def a_star(graph, start, goal):
+    visited = []
+    path = []
+    parent = {}
+    pq = PriorityQueue()
+    pq.put((0, start))
+    while pq.empty() == False:
+        u = pq.get()[1]
+        # Displaying the path having lowest cost
+        #print(u, end=" ")
+        path.append(u)
+        if u == goal:
+            return True, backtrace(parent, start, goal)
+        edges = list(graph.out_edges(u, data='length'))
+        for s, e, c in edges:
+            if e not in visited:
+                f = heuristic(graph.nodes[s]['x'], graph.nodes[s]['y'], graph.nodes[goal]['x'], graph.nodes[goal]['y']) + c
+                parent[e] = s
+                visited.append(e)
+                pq.put((f, e))
+    return False
+ 
+#---------------------------------------------------------
+#------------------- Ejecucion ---------------------------
+#---------------------------------------------------------
 # Prueba con todos los algoritmos una pareja de nodos
-def testProblem1(Graph, start, end):
+def busqueda_no_informada(Graph, start, end):
     timeExec = []
     distance = []
     timeA = []
@@ -195,51 +250,163 @@ def testProblem1(Graph, start, end):
     print()
     return timeExec, timeA, distance
 
+
+def busqueda_informada(Graph, start, end):
+    timeExec = []
+    distance = []
+    timeA = []
+    # Best First Search
+    print(" - Calculating Best First Search Route - ")
+    start_time = time.time()
+    exito, path = best_first_search(Graph, start, end)
+    print("Tiempo empleado")
+    texe = (time.time() - start_time)
+    print("--- %s seconds ---" % texe)
+    tmp1, tmp2 = printResults(Graph, path)
+    timeExec.append(texe)
+    timeA.append(tmp1)
+    distance.append(tmp2)
+    print()
+    # A Star
+    print(" - Calculating A * Route - ")
+    start_time = time.time()
+    exito, path = a_star(Graph, start, end)
+    print("Tiempo empleado")
+    texe = (time.time() - start_time)
+    print("--- %s seconds ---" % texe)
+    tmp1, tmp2 = printResults(Graph, path)
+    timeExec.append(texe)
+    timeA.append(tmp1)
+    distance.append(tmp2)
+    print()
+    return timeExec, timeA, distance
+    
+
 # Imprime los resultados promedio de toda la ejecucion
-def printAverageResult(algoritm, texe, time, dist):
+def printAverageResult(algoritm, texe, time, dist, numItems):
     print("Average Results ", algoritm, " : Ratio 1km")
-    print("Time execution: ", texe / 10)
-    print("Time : ", time / 10)
-    print("Distance: ", dist / 10)
+    print("Time execution: ", texe / numItems)
+    print("Time : ", time / numItems)
+    print("Distance: ", dist / numItems)
 
 # Ejecucion de las 10 parejas de puntos
-def runProblem1(Graph, locations):
+# Busqueda no informada (bni)
+def ejecucion_bni(Graph, locations):
     algoritmNames = ['BFS', 'DFS', 'DLS', 'UCS Distance', 'UCS Time']
     timeExecA = [0, 0, 0, 0, 0]
     distanceA = [0, 0, 0, 0, 0]
     timeA = [0, 0, 0, 0, 0]
     for i in range(len(locations)):
         print('Pareja de putnos #', i+1)
-        tmp1, tmp2, tmp3 = testProblem1(Graph, locations[i][0], locations[i][1])
+        tmp1, tmp2, tmp3 = busqueda_no_informada(Graph, locations[i][0], locations[i][1])
         for j in range(5):
 
             timeExecA[j] = timeExecA[j] + tmp1[j]
             distanceA[j] = distanceA[j] + tmp2[j]
             timeA[j] = timeA[j] + tmp3[j]
     for i in range(5):
-        printAverageResult(algoritmNames[i], timeExecA[i], distanceA[i], timeA[i])
+        printAverageResult(algoritmNames[i], timeExecA[i], distanceA[i], timeA[i], len(locations))
+# Busqueda informada (bi)
+def ejecucion_bi(Graph, locations):
+    algoritmNames = ['Best First Search', 'A *']
+    timeExecA = [0, 0]
+    distanceA = [0, 0]
+    timeA = [0, 0]
+    for i in range(len(locations)):
+        print('Pareja de putnos #', i+1)
+        tmp1, tmp2, tmp3 = busqueda_informada(Graph, locations[i][0], locations[i][1])
+        for j in range(2):
 
+            timeExecA[j] = timeExecA[j] + tmp1[j]
+            distanceA[j] = distanceA[j] + tmp2[j]
+            timeA[j] = timeA[j] + tmp3[j]
+    for i in range(2):
+        printAverageResult(algoritmNames[i], timeExecA[i], distanceA[i], timeA[i], len(locations))
+# Prueba Final
+def busqueda_rendimiento(Graph, start, end):
+    timeExec = []
+    distance = []
+    timeA = []
+    # Algoritmo
+    print(" - Calculating Breadth First Search Route - ")
+    start_time = time.time()
+    exito, path = bfs(Graph, start, end)
+    print("Tiempo empleado")
+    texe = (time.time() - start_time)
+    print("--- %s seconds ---" % texe)
+    tmp1, tmp2 = printResults(Graph, path)
+    timeExec.append(texe)
+    timeA.append(tmp1)
+    distance.append(tmp2)
+    print()
+    return timeExec, timeA, distance
 
-# Data
+def evaluacion_rendimiento(Graph, locations):
+    algoritmNames = ['Breadth First Search']
+    timeExecA = [0]
+    distanceA = [0]
+    timeA = [0]
+    for i in range(len(locations)):
+        print('Pareja de putnos #', i+1)
+        tmp1, tmp2, tmp3 = busqueda_rendimiento(Graph, locations[i][0], locations[i][1])
+        for j in range(1):
+            timeExecA[j] = timeExecA[j] + tmp1[j]
+            distanceA[j] = distanceA[j] + tmp2[j]
+            timeA[j] = timeA[j] + tmp3[j]
+    for i in range(1):
+        printAverageResult(algoritmNames[i], timeExecA[i], distanceA[i], timeA[i], len(locations))
+# Main
 def main():
     # Graph
     G = ox.graph_from_address('Puerta del Sol, Madrid, Comunidad de Madrid, 28013, España', dist=1000, network_type='walk')
+    # Agregar velocidad al grafo, se requiere para calcular tiempo
     G2 = ox.speed.add_edge_speeds(G, precision=3)
+    # Agregar tiempo al grafo
     G3 = ox.speed.add_edge_travel_times(G, precision=3)
+    # 1 km > Ratio distance - dist=1000
+    first_set_distance = []
+    first_set_distance.append([3246224685, 21734250])
+    first_set_distance.append([21734250, 25906743])
+    first_set_distance.append([25906743, 26341673])
+    first_set_distance.append([26341673, 25906273])
+    first_set_distance.append([25906273, 26486643])
+    first_set_distance.append([26486643, 26487779])
+    first_set_distance.append([26487779, 21941563])
+    first_set_distance.append([21941563, 21947369])
+    first_set_distance.append([21947369, 25906743])
+    first_set_distance.append([21947369, 21734250])
+    # 1 km < Ratio distance < 3 km - dist=1000
+    second_set_distance = []
+    second_set_distance.append([3246224685, 25906743])
+    second_set_distance.append([26341673, 3246224685])
+    second_set_distance.append([21947369, 3246224685])
+    # 3 km < Ratio distance < 7 km  - dist=3000
+    third_set_distance = []
+    third_set_distance.append([3246224685, 21527321])
+    third_set_distance.append([3246224685, 151022800])
+    third_set_distance.append([3246224685, 267041344])
+    # 10 km < Ratio distance - dist=6000
+    fourth_set_distance = []
+    fourth_set_distance.append([267041344, 49951831])
+    fourth_set_distance.append([49951831, 2630630893])
+    fourth_set_distance.append([2630630893, 27522358])
 
-    # 1 km Ratio distance
-    problemOneLocations = []
-    problemOneLocations.append([3246224685, 21734250])
-    problemOneLocations.append([21734250, 25906743])
-    problemOneLocations.append([25906743, 26341673])
-    problemOneLocations.append([26341673, 25906273])
-    problemOneLocations.append([25906273, 26486643])
-    problemOneLocations.append([26486643, 26487779])
-    problemOneLocations.append([26487779, 21941563])
-    problemOneLocations.append([21941563, 21947369])
-    problemOneLocations.append([21947369, 25906743])
-    problemOneLocations.append([21947369, 21734250])
-    # Run Problem 1
-    runProblem1(G, problemOneLocations)
+    # Ajustar dist=1000
+    # Ejecutar Busqueda no informada
+    #ejecucion_bni(G, first_set_distance)
+    # Ejecutar Busqueda informada
+    #ejecucion_bi(G, first_set_distance)
+    
+
+    # Evaluacion final
+    # Ajustar dist=1000
+    #evaluacion_rendimiento(G, second_set_distance)
+    # Ajustar dist=3000
+    #evaluacion_rendimiento(G, third_set_distance)
+    # Ajustar dist=6000
+    #evaluacion_rendimiento(G, fourth_set_distance)
+    
+   
+    
 if __name__ == '__main__':
     main()
